@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Add your CSS styles here */
+
+    /* Example CSS styles for the close button */
+    .fas.fa-times {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="notice" id="notice">
+  <div class="label"><i class="img-3 fas fa-exclamation-triangle"></i></div>
+  <div class="div-wrapper">
+    <div class="text-2">
+      <div class="title-2">Allowance Policy</div>
+      <p class="text-wrapper-12">
+        1. Leave will start from the month of January<br />2. Any type of change will be
+        effective on the
+        next day.
+      </p>
+    </div>
+  </div>
+  <i class="img-3 fas fa-times" onclick="closeNotice()"></i>
+</div>
+
+<script>
+  function closeNotice() {
+    var notice = document.getElementById('notice');
+    notice.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
